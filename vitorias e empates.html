@@ -1,0 +1,52 @@
+<meta charset="utf-8">
+<script>
+
+var vitorias=parseInt(prompt("Qual é o número de vitórias de seu time"));
+var empates=parseInt(prompt("Qual é o número de empates que houve em seu time"));
+var pontos = ((vitorias * 3) + empates);
+
+
+
+function letraGrande () {
+document.write("<h1><h1>");
+}
+
+function pularLinha () {
+    document.write("<br>");
+    document.write("<br>");
+}
+
+
+
+function mostre(frase) {
+    document.write(frase);
+    pularLinha();
+    letraGrande();
+}
+
+if (pontos>28) {
+    mostre("Parabéns,seu time esta melhor do que o ano passado");
+     
+    
+   
+}
+
+if (pontos<28) {
+    mostre("Seu time esta pior do que o ano passado.");
+    
+   
+}
+
+if (pontos==28) {
+    mostre("Seu time esta igual ao ano passado.");
+    
+
+    
+}
+
+mostre("Os pontos do seu time, é de no total de: " + pontos + " pontos");
+
+console.log(vitorias);
+console.log(empates);
+console.log(pontos);
+</script>

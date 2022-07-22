@@ -1,0 +1,23 @@
+<meta charset="utf-8">
+<script>
+    function mostre (frase) {
+        document.write(frase);
+        pularLinha();
+    }
+
+    function pularLinha () {
+        document.write("<br>");
+        document.write("<br>");
+
+    }
+    var numeroPensado = 5;
+    var chute= parseInt(prompt("Qual é o seu chute"));
+
+    if(chute==numeroPensado)  {
+        mostre("Você acertou,parabéns!!");
+    }  else {
+        mostre("Que pena, numero pensando foi " + numeroPensado);
+    }
+
+    </script>
+    

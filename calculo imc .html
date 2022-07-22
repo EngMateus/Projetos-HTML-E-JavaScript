@@ -1,0 +1,49 @@
+<meta charset="utf-8">
+<script>
+    function pularLinha () {
+
+        document.write("<br>");
+        document.write("<br>");
+
+    }
+
+    function mostrar (frase) {
+
+        document.write(frase);
+        pularLinha();
+    }
+
+
+    var pesoMateus = 80;
+    var alturaMateus =1.82;
+    var imcMateus = pesoMateus / (alturaMateus*alturaMateus);
+
+    var pesoVitor = 70;
+    var alturaVitor = 1.70;
+    var imcVitor = pesoVitor / (alturaVitor*alturaVitor);
+    var imctotal= imcMateus+imcVitor;
+
+    var pesoMarcos = 98;
+    var alturaMarcos = 1.74;
+    imcMarcos = pesoMarcos / (alturaMarcos*alturaMarcos);
+
+ 
+
+
+
+
+
+    mostrar("O IMC do  Mateus é de: ");
+    mostrar(imcMateus);
+
+    mostrar("O IMC do Vitor é de: ");
+    mostrar(imcVitor);
+
+    mostrar("O IMC do Marcos é de: ");
+    mostrar(imcMarcos);
+    mostrar("A soma do meu imc e a do vitor é de " + imctotal);
+
+
+
+
+</script>

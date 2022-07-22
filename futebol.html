@@ -1,0 +1,21 @@
+<meta charset="UTF-8">
+<script>
+
+function pulaLinha() {
+    document.write("<br>");
+    document.write("<br>");
+}
+
+function mostre(frase) {
+    document.write(frase);
+    pulaLinha();
+}
+
+var vitorias =prompt("Qual foi o número de vitórias de seu time");
+alert(vitorias)
+var empates =prompt("Qual foi o número de empates que ocorreram");
+var pontos = vitorias * 3 + empates
+
+mostre("O total de pontos do seu time é: " + pontos);
+
+</script>
